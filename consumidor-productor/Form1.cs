@@ -14,8 +14,8 @@ namespace consumidor_productor
 
         private void AgregarItems()
         {
-            imageList1.Images.Add(Image.FromFile(@"C:\\Users\\ximgv\\Downloads\\moon.png"));
-            imageList1.Images.Add(Image.FromFile(@"C:\\Users\\ximgv\\Downloads\\sun.png"));
+            imageList1.Images.Add(Image.FromFile(@"..\\..\\..\\imagenes\\moon.png"));
+            imageList1.Images.Add(Image.FromFile(@"..\\..\\..\\imagenes\\sun.png"));
             imageList1.ImageSize = new Size(70, 70);
             listView1.LargeImageList = imageList1;
             
@@ -173,7 +173,7 @@ namespace consumidor_productor
 
             if (tiempoProductor <= 0 && cantidadProductor <= 0 && !timer3.Enabled)
             {
-                tiempoProductor = new Random().Next(5, 7);
+                tiempoProductor = new Random().Next(5, 10);
                 cantidadProductor = new Random().Next(1, 5);
                 Tiempo1Label.Text = "Tiempo: " + tiempoProductor.ToString();
                 Cantidad1Label.Text = "Cantidad: " + cantidadProductor.ToString();
@@ -182,7 +182,7 @@ namespace consumidor_productor
             if ( tiempoConsumidor <= 0 && cantidadConsumidor <= 0 && !timer4.Enabled)
             {
                 tiempoConsumidor = new Random().Next(5, 10);
-                cantidadConsumidor = new Random().Next(5, 11);
+                cantidadConsumidor = new Random().Next(1, 5);
                 Tiempo2Label.Text = "Tiempo: " + tiempoConsumidor.ToString();
                 Cantidad2Label.Text = "Cantidad: " + cantidadConsumidor.ToString();
                 timer2.Start();

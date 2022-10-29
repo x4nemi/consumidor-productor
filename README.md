@@ -1,4 +1,4 @@
-# consumidor-productor
+# Consumidor - Productor
 
 
 Requerimientos:

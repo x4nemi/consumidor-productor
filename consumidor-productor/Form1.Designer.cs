@@ -84,7 +84,7 @@
             // 
             this.Tiempo2Label.AutoSize = true;
             this.Tiempo2Label.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Tiempo2Label.Location = new System.Drawing.Point(535, 43);
+            this.Tiempo2Label.Location = new System.Drawing.Point(502, 43);
             this.Tiempo2Label.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.Tiempo2Label.Name = "Tiempo2Label";
             this.Tiempo2Label.Size = new System.Drawing.Size(87, 30);
@@ -104,7 +104,7 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(353, 43);
+            this.pictureBox2.Location = new System.Drawing.Point(320, 43);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(171, 100);
@@ -137,7 +137,7 @@
             // 
             this.Cantidad2Label.AutoSize = true;
             this.Cantidad2Label.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Cantidad2Label.Location = new System.Drawing.Point(535, 73);
+            this.Cantidad2Label.Location = new System.Drawing.Point(502, 73);
             this.Cantidad2Label.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.Cantidad2Label.Name = "Cantidad2Label";
             this.Cantidad2Label.Size = new System.Drawing.Size(101, 30);
@@ -148,7 +148,7 @@
             // 
             this.Estado2Label.AutoSize = true;
             this.Estado2Label.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Estado2Label.Location = new System.Drawing.Point(535, 103);
+            this.Estado2Label.Location = new System.Drawing.Point(502, 103);
             this.Estado2Label.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.Estado2Label.Name = "Estado2Label";
             this.Estado2Label.Size = new System.Drawing.Size(80, 30);
@@ -215,11 +215,11 @@
             // InstruccionLabel
             // 
             this.InstruccionLabel.AutoSize = true;
-            this.InstruccionLabel.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.InstruccionLabel.Location = new System.Drawing.Point(263, 782);
+            this.InstruccionLabel.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.InstruccionLabel.Location = new System.Drawing.Point(209, 782);
             this.InstruccionLabel.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.InstruccionLabel.Name = "InstruccionLabel";
-            this.InstruccionLabel.Size = new System.Drawing.Size(234, 30);
+            this.InstruccionLabel.Size = new System.Drawing.Size(209, 25);
             this.InstruccionLabel.TabIndex = 12;
             this.InstruccionLabel.Text = "Presiona \"Esc\" para salir";
             // 

@@ -40,8 +40,8 @@ namespace consumidor_productor
 
             imageList2.Images.Add(Image.FromFile(@"..\\..\\..\\imagenes\\l1.png"));
             imageList2.Images.Add(Image.FromFile(@"..\\..\\..\\imagenes\\l2.png"));
-            imageList2.Images.Add(Image.FromFile(@"..\\..\\..\\imagenes\\l3.png"));
             imageList2.Images.Add(Image.FromFile(@"..\\..\\..\\imagenes\\l4.png"));
+            imageList2.Images.Add(Image.FromFile(@"..\\..\\..\\imagenes\\l3.png"));
 
             imageList2.ImageSize = new Size(100, 100);
             
@@ -180,13 +180,13 @@ namespace consumidor_productor
 
         private void timer5_Tick(object sender, EventArgs e)
         {
-            if ((!Hay(true) && !timer1.Enabled) || (!timer1.Enabled && Hay(true) && !timer4.Enabled && cantidadProductor > 0))
+            if ((!Hay(true) && !timer1.Enabled) || (!timer1.Enabled && Hay(false) && !timer4.Enabled && cantidadProductor > 0))
             {
                 Estado1Label.ForeColor = Color.Green;
                 Estado1Label.Text = "Trabajando...";
                 pictureBox1.Image = imageList2.Images[0];
                 timer3.Start();
-            }else if ((!Hay(false) && !timer2.Enabled) || (!timer2.Enabled && Hay(false) && !timer3.Enabled && cantidadConsumidor > 0))
+            }else if ((!Hay(false) && !timer2.Enabled) || (!timer2.Enabled && Hay(true) && !timer3.Enabled && cantidadConsumidor > 0))
             {
                 Estado2Label.ForeColor = Color.Green;
                 Estado2Label.Text = "Trabajando...";

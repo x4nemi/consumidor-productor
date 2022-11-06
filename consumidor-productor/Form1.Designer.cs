@@ -33,8 +33,6 @@
             this.listView1 = new System.Windows.Forms.ListView();
             this.Tiempo1Label = new System.Windows.Forms.Label();
             this.Tiempo2Label = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.Estado1Label = new System.Windows.Forms.Label();
             this.Cantidad1Label = new System.Windows.Forms.Label();
             this.Cantidad2Label = new System.Windows.Forms.Label();
@@ -48,6 +46,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.InstruccionLabel = new System.Windows.Forms.Label();
+            this.imageList2 = new System.Windows.Forms.ImageList(this.components);
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -60,11 +61,13 @@
             // 
             // listView1
             // 
+            this.listView1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.listView1.Font = new System.Drawing.Font("Fira Code", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.listView1.Location = new System.Drawing.Point(26, 181);
+            this.listView1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.listView1.Location = new System.Drawing.Point(17, 217);
             this.listView1.Margin = new System.Windows.Forms.Padding(8, 9, 8, 9);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(578, 578);
+            this.listView1.Size = new System.Drawing.Size(938, 286);
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             // 
@@ -72,7 +75,7 @@
             // 
             this.Tiempo1Label.AutoSize = true;
             this.Tiempo1Label.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Tiempo1Label.Location = new System.Drawing.Point(164, 43);
+            this.Tiempo1Label.Location = new System.Drawing.Point(315, 75);
             this.Tiempo1Label.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.Tiempo1Label.Name = "Tiempo1Label";
             this.Tiempo1Label.Size = new System.Drawing.Size(87, 30);
@@ -83,37 +86,18 @@
             // 
             this.Tiempo2Label.AutoSize = true;
             this.Tiempo2Label.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Tiempo2Label.Location = new System.Drawing.Point(502, 43);
+            this.Tiempo2Label.Location = new System.Drawing.Point(653, 75);
             this.Tiempo2Label.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.Tiempo2Label.Name = "Tiempo2Label";
             this.Tiempo2Label.Size = new System.Drawing.Size(87, 30);
             this.Tiempo2Label.TabIndex = 2;
             this.Tiempo2Label.Text = "Tiempo:";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(26, 15);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(128, 128);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Location = new System.Drawing.Point(320, 43);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(171, 100);
-            this.pictureBox2.TabIndex = 4;
-            this.pictureBox2.TabStop = false;
-            // 
             // Estado1Label
             // 
             this.Estado1Label.AutoSize = true;
             this.Estado1Label.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Estado1Label.Location = new System.Drawing.Point(164, 103);
+            this.Estado1Label.Location = new System.Drawing.Point(315, 135);
             this.Estado1Label.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.Estado1Label.Name = "Estado1Label";
             this.Estado1Label.Size = new System.Drawing.Size(75, 30);
@@ -124,7 +108,7 @@
             // 
             this.Cantidad1Label.AutoSize = true;
             this.Cantidad1Label.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Cantidad1Label.Location = new System.Drawing.Point(164, 73);
+            this.Cantidad1Label.Location = new System.Drawing.Point(315, 105);
             this.Cantidad1Label.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.Cantidad1Label.Name = "Cantidad1Label";
             this.Cantidad1Label.Size = new System.Drawing.Size(101, 30);
@@ -135,7 +119,7 @@
             // 
             this.Cantidad2Label.AutoSize = true;
             this.Cantidad2Label.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Cantidad2Label.Location = new System.Drawing.Point(502, 73);
+            this.Cantidad2Label.Location = new System.Drawing.Point(653, 105);
             this.Cantidad2Label.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.Cantidad2Label.Name = "Cantidad2Label";
             this.Cantidad2Label.Size = new System.Drawing.Size(101, 30);
@@ -146,7 +130,7 @@
             // 
             this.Estado2Label.AutoSize = true;
             this.Estado2Label.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Estado2Label.Location = new System.Drawing.Point(502, 103);
+            this.Estado2Label.Location = new System.Drawing.Point(653, 135);
             this.Estado2Label.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.Estado2Label.Name = "Estado2Label";
             this.Estado2Label.Size = new System.Drawing.Size(80, 30);
@@ -155,7 +139,7 @@
             // 
             // IniciarBoton
             // 
-            this.IniciarBoton.Location = new System.Drawing.Point(263, 774);
+            this.IniciarBoton.Location = new System.Drawing.Point(405, 516);
             this.IniciarBoton.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.IniciarBoton.Name = "IniciarBoton";
             this.IniciarBoton.Size = new System.Drawing.Size(129, 46);
@@ -176,12 +160,12 @@
             // 
             // timer3
             // 
-            this.timer3.Interval = 1000;
+            this.timer3.Interval = 500;
             this.timer3.Tick += new System.EventHandler(this.timer3_Tick);
             // 
             // timer4
             // 
-            this.timer4.Interval = 1000;
+            this.timer4.Interval = 500;
             this.timer4.Tick += new System.EventHandler(this.timer4_Tick);
             // 
             // timer5
@@ -191,22 +175,22 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(79, 149);
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(225, 40);
             this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(104, 30);
+            this.label1.Size = new System.Drawing.Size(110, 30);
             this.label1.TabIndex = 10;
             this.label1.Text = "Productor";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(436, 149);
+            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(558, 40);
             this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(125, 30);
+            this.label2.Size = new System.Drawing.Size(130, 30);
             this.label2.TabIndex = 11;
             this.label2.Text = "Consumidor";
             // 
@@ -214,18 +198,45 @@
             // 
             this.InstruccionLabel.AutoSize = true;
             this.InstruccionLabel.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
-            this.InstruccionLabel.Location = new System.Drawing.Point(209, 782);
+            this.InstruccionLabel.Location = new System.Drawing.Point(367, 528);
             this.InstruccionLabel.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.InstruccionLabel.Name = "InstruccionLabel";
             this.InstruccionLabel.Size = new System.Drawing.Size(209, 25);
             this.InstruccionLabel.TabIndex = 12;
             this.InstruccionLabel.Text = "Presiona \"Esc\" para salir";
             // 
+            // imageList2
+            // 
+            this.imageList2.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
+            this.imageList2.ImageSize = new System.Drawing.Size(16, 16);
+            this.imageList2.TransparentColor = System.Drawing.Color.Transparent;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(207, 75);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 15;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Location = new System.Drawing.Point(545, 75);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox2.TabIndex = 16;
+            this.pictureBox2.TabStop = false;
+            // 
             // ProductorConsumidor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 30F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(714, 830);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(973, 581);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.InstruccionLabel);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -234,8 +245,6 @@
             this.Controls.Add(this.Cantidad2Label);
             this.Controls.Add(this.Cantidad1Label);
             this.Controls.Add(this.Estado1Label);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.Tiempo2Label);
             this.Controls.Add(this.Tiempo1Label);
             this.Controls.Add(this.listView1);
@@ -243,6 +252,7 @@
             this.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.Name = "ProductorConsumidor";
             this.Text = "ConsumidorProductor";
+            this.Load += new System.EventHandler(this.ProductorConsumidor_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.ProductorConsumidor_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -257,8 +267,6 @@
         private ListView listView1;
         private Label Tiempo1Label;
         private Label Tiempo2Label;
-        private PictureBox pictureBox1;
-        private PictureBox pictureBox2;
         private Label Estado1Label;
         private Label Cantidad1Label;
         private Label Cantidad2Label;
@@ -272,5 +280,8 @@
         private Label label1;
         private Label label2;
         private Label InstruccionLabel;
+        private ImageList imageList2;
+        private PictureBox pictureBox1;
+        private PictureBox pictureBox2;
     }
 }

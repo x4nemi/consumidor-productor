@@ -197,16 +197,16 @@ namespace consumidor_productor
 
             if (tiempoProductor <= 0 && cantidadProductor <= 0 && !timer3.Enabled)
             {
-                tiempoProductor = new Random().Next(1, 3);
-                cantidadProductor = new Random().Next(2, 5);
+                tiempoProductor = new Random().Next(1, 4);
+                cantidadProductor = new Random().Next(1, 6);
                 Tiempo1Label.Text = "Tiempo: " + tiempoProductor.ToString();
                 Cantidad1Label.Text = "Cantidad: " + cantidadProductor.ToString();
                 timer1.Start();
             }
             if ( tiempoConsumidor <= 0 && cantidadConsumidor <= 0 && !timer4.Enabled)
             {
-                tiempoConsumidor = new Random().Next(1, 3);
-                cantidadConsumidor = new Random().Next(1, 5);
+                tiempoConsumidor = new Random().Next(1, 4);
+                cantidadConsumidor = new Random().Next(1, 6);
                 Tiempo2Label.Text = "Tiempo: " + tiempoConsumidor.ToString();
                 Cantidad2Label.Text = "Cantidad: " + cantidadConsumidor.ToString();
                 timer2.Start();
